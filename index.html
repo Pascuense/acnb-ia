@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>ACNB IA · Dossier y presentaciones</title>
+<style>
+  :root { --bg:#f5f6f9; --surface:#fff; --ink:#141b28; --muted:#59647a; --line:#dfe4ec; --accent:#2b4fd8; }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bg:#0b101c; --surface:#121a2b; --ink:#e8edf7; --muted:#9aa6bd; --line:#26304a; --accent:#8ea4ff; } }
+  :root[data-theme="dark"] { --bg:#0b101c; --surface:#121a2b; --ink:#e8edf7; --muted:#9aa6bd; --line:#26304a; --accent:#8ea4ff; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font-family:"Segoe UI",system-ui,sans-serif; line-height:1.5; }
+  .wrap { max-width:900px; margin:0 auto; padding:56px 24px 72px; }
+  .eyebrow { font-family:Consolas,monospace; font-size:.72rem; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--muted); display:flex; align-items:center; gap:10px; margin-bottom:16px; }
+  .eyebrow::before { content:""; width:34px; height:2px; background:var(--accent); }
+  h1 { font-size:clamp(1.7rem,4vw,2.4rem); margin:0; letter-spacing:-.02em; }
+  p.lead { color:var(--muted); max-width:62ch; margin:14px 0 36px; }
+  h2 { font-size:1.05rem; margin:34px 0 12px; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(260px,1fr)); gap:14px; }
+  a.card { display:block; text-decoration:none; color:inherit; background:var(--surface);
+    border:1px solid var(--line); border-radius:12px; padding:18px 20px; transition:border-color .2s ease; }
+  a.card:hover { border-color:var(--accent); }
+  a.card .t { font-weight:700; }
+  a.card .d { color:var(--muted); font-size:.88rem; margin-top:4px; }
+  footer { color:var(--muted); font-size:.8rem; margin-top:44px; border-top:1px solid var(--line); padding-top:18px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="eyebrow">ACNB IA · Agosto 2026</div>
+  <h1>Dossier y presentaciones</h1>
+  <p class="lead">Formación y gobernanza de Inteligencia Artificial en España y Chile. Las presentaciones se navegan con clic o con las flechas del teclado; los enlaces a las aplicaciones se abren en una pestaña nueva.</p>
+
+  <h2>Dossier profesional</h2>
+  <div class="grid">
+    <a class="card" href="cv.html"><span class="t">Cristóbal Aliste · Director de IA</span><span class="d">Versión completa (España y Chile)</span></a>
+    <a class="card" href="cv-espana.html"><span class="t">Dossier · España</span><span class="d">RGPD, AI Act y FUNDAE</span></a>
+    <a class="card" href="cv-chile.html"><span class="t">Dossier · Chile</span><span class="d">Ley 21.719 e ISO/IEC 42001</span></a>
+  </div>
+
+  <h2>Presentaciones</h2>
+  <div class="grid">
+    <a class="card" href="gobernanza-espana.html"><span class="t">Gobernanza de IA · España</span><span class="d">SGIA ISO/IEC 42001 y calendario del AI Act</span></a>
+    <a class="card" href="gobernanza-chile.html"><span class="t">Gobernanza de IA · Chile</span><span class="d">SGIA y cumplimiento de la Ley 21.719</span></a>
+    <a class="card" href="programa-ejecutivo.html"><span class="t">Programa ejecutivo</span><span class="d">Directores y alta gerencia · 5 sesiones</span></a>
+    <a class="card" href="formacion-empresas.html"><span class="t">Formación en IA · Empresas</span><span class="d">Metodología 20/80 y bonificación FUNDAE</span></a>
+  </div>
+
+  <footer>ACNB IA · contacto@acnb.es · Este sitio no se indexa en buscadores.</footer>
+</div>
+</body>
+</html>
