@@ -299,9 +299,10 @@
     section > .wrap > .sec-head { break-inside: avoid; }
     .tl p { max-width: 105ch; }
     #planes .grid { grid-template-columns: repeat(3, 1fr); }
-    body { zoom: 1.08; }
+    body { zoom: 0.92; }
     /* La lista de instituciones no debe partirse entre páginas */
-    #docencia { break-inside: avoid; }
+    /* Protegemos los bloques, no la sección entera: con los programas ya no cabría */
+    #docencia .sec-head, #docencia .sec-sub { break-after: avoid; }
     #docencia .logos { break-inside: avoid; gap: 2px; margin-top: 3px; }
     #docencia .chip { font-size: 7.4px; padding: 1.5px 6px; }
     #docencia .sec-sub { font-size: 8.6px; }
@@ -452,7 +453,7 @@
 <section id="docencia">
   <div class="wrap">
     <div class="sec-head"><span class="mono">03</span><h2>Docencia e instituciones que han confiado</h2></div>
-    <p class="sec-sub">Más de 500 personas formadas de todas las edades —jóvenes, familias, trabajadores, profesionales y empleados públicos— en doce cursos impartidos durante 2026, presenciales y en aula virtual. Metodología 20% teoría / 80% práctica sobre las tareas reales de cada equipo, con medición de horas antes y después.</p>
+    <p class="sec-sub">Más de 500 personas formadas de todas las edades —jóvenes, familias, trabajadores, profesionales y empleados públicos—, presencial y en aula virtual. Metodología 20% teoría / 80% práctica sobre las tareas reales de cada equipo: pensamiento crítico, uso ético, protección de datos y herramientas generativas, con medición de horas antes y después.</p>
     <div class="logos">
       <span class="chip">Ayuntamiento de Utebo</span>
       <span class="chip">Ayuntamiento de Fuentes de Ebro</span>
@@ -473,6 +474,14 @@
       <span class="chip">Océano Atlántico</span>
       <span class="chip">Padel Indoor Utebo</span>
     </div>
+    <div class="rows" style="margin-top:14px">
+      <div class="row"><span class="status build">3 programas</span><div><div class="t">Miguélez S. L. (León) · IA para equipos industriales</div><div class="d">Programas sectoriales para ingeniería de mantenimiento, ingeniería de procesos y administración comercial. Junio de 2026.</div></div><span class="lnk"></span></div>
+      <div class="row"><span class="status build">2 grupos</span><div><div class="t">Formación empresarial · Ventas B2B y cumplimiento</div><div class="d">Ventas con Microsoft Copilot (17 participantes) e IA aplicada a consultoría ISO y operaciones con Claude (14 participantes).</div></div><span class="lnk"></span></div>
+      <div class="row"><span class="status build">Multisectorial</span><div><div class="t">IA aplicada a la empresa</div><div class="d">Proyectos Formación y Servicios, Innovaform, EMC Software Jurídico y Espacio Deportivo Utebo.</div></div><span class="lnk"></span></div>
+      <div class="row"><span class="status build">Jóvenes</span><div><div class="t">Espacio Joven Utebo y Utebo Emprende TÁNDEM</div><div class="d">IA generativa aplicada al emprendimiento, con las áreas de juventud y de desarrollo local del municipio.</div></div><span class="lnk"></span></div>
+      <div class="row"><span class="status build">Educativo</span><div><div class="t">IES Torre de los Espejos · estudiantes y familias</div><div class="d">Itinerarios de IA para ESO, Bachillerato y familias, diseñados con el AMPA del centro.</div></div><span class="lnk"></span></div>
+    </div>
+
   </div>
 </section>
 
