@@ -300,9 +300,9 @@
     .tl p { max-width: 105ch; }
     #planes .grid { grid-template-columns: repeat(3, 1fr); }
     body { zoom: 1.18; }
+
+
     #desarrollos .grid { grid-template-columns: repeat(2, 1fr); }
-
-
   }
 </style>
 
@@ -354,18 +354,17 @@
 
     <div class="grid">
 
-      <article class="card" data-cat="live edu">
-        <div class="top"><h3>Agente Docente INACAP</h3><span class="status live">En vivo</span></div>
-        <p class="pitch">Automatiza el trabajo docente desde el descriptor oficial de la asignatura: planificaciones, evaluaciones que suman exactamente 100 puntos, y corrección asistida por visión (escala chilena 1,0–7,0). La IA nunca inventa contenido del descriptor.</p>
+      <article class="card" data-cat="gov">
+        <div class="top"><h3>CLAVE Governance Platform</h3><span class="status build">En construcción</span></div>
+        <p class="pitch">SaaS multitenant de gobernanza de IA: inventario, evaluación, aprobación, operación y retirada de sistemas de IA con trazabilidad completa de riesgos, controles y evidencias. Alineado a ISO/IEC 42001, EU AI Act y RGPD.</p>
         <ul>
-          <li>Desplegado en Azure (App Service + Static Web Apps) con CI/CD OIDC</li>
-          <li>Exportación .docx / .xlsx / .pdf · medición de coste de IA por uso</li>
+          <li>Multitenancy con RLS estricta en PostgreSQL (sin BYPASSRLS, anti «aislamiento de teatro»)</li>
+          <li>Auditoría append-only con anclaje externo de hashes · evidencias con cifrado BYOK-ready</li>
+          <li>Accesibilidad WCAG 2.2 AA verificada automáticamente (Playwright + axe)</li>
         </ul>
-        <div class="tags"><span class="tag">NestJS</span><span class="tag">React</span><span class="tag">Claude · visión</span><span class="tag">Azure</span></div>
-        <div class="actions">
-          <a class="open" href="https://green-water-04990f110.7.azurestaticapps.net" target="_blank" rel="noopener">Abrir app ↗</a>
-        </div>
-        <div class="priv">PRIVACY.md y SECURITY.md formales · Ley 21.719 · credenciales bcrypt</div>
+        <div class="tags"><span class="tag">NestJS 11</span><span class="tag">Next.js 15</span><span class="tag">Drizzle</span><span class="tag">ISO 42001</span></div>
+        <div class="actions"></div>
+        <div class="priv">Resuelve el conflicto inmutabilidad del audit log ↔ derecho de supresión (RGPD + Ley 21.719)</div>
       </article>
 
       <article class="card" data-cat="live edu">
@@ -374,6 +373,7 @@
         <ul>
           <li>En producción: Azure Static Web Apps + App Service + Supabase</li>
           <li>Reutiliza y evoluciona la arquitectura probada de INACAP</li>
+          <li>En uso por 5 docentes (inventario ACNB, octubre 2026)</li>
         </ul>
         <div class="tags"><span class="tag">NestJS</span><span class="tag">Prisma</span><span class="tag">Supabase</span><span class="tag">Claude</span></div>
         <div class="actions">
@@ -388,6 +388,7 @@
         <ul>
           <li>v1.0.0 en Azure App Service · e2e con Playwright · gitleaks en CI</li>
           <li>Documentación operativa completa: rollback, backup, respuesta a incidentes</li>
+          <li>En uso por 2 docentes (inventario ACNB, octubre 2026)</li>
         </ul>
         <div class="tags"><span class="tag">NestJS</span><span class="tag">React</span><span class="tag">Claude</span><span class="tag">Azure</span></div>
         <div class="actions">
@@ -396,17 +397,34 @@
         <div class="priv">RGPD/LOPDGDD · el servidor es la única fuente de verdad del currículo</div>
       </article>
 
-      <article class="card" data-cat="gov">
-        <div class="top"><h3>CLAVE Governance Platform</h3><span class="status build">En construcción</span></div>
-        <p class="pitch">SaaS multitenant de gobernanza de IA: inventario, evaluación, aprobación, operación y retirada de sistemas de IA con trazabilidad completa de riesgos, controles y evidencias. Alineado a ISO/IEC 42001, EU AI Act y RGPD.</p>
+      <article class="card" data-cat="live edu">
+        <div class="top"><h3>Agente Docente INACAP</h3><span class="status live">En vivo</span></div>
+        <p class="pitch">Automatiza el trabajo docente desde el descriptor oficial de la asignatura: planificaciones, evaluaciones que suman exactamente 100 puntos, y corrección asistida por visión (escala chilena 1,0–7,0). La IA nunca inventa contenido del descriptor.</p>
         <ul>
-          <li>Multitenancy con RLS estricta en PostgreSQL (sin BYPASSRLS, anti «aislamiento de teatro»)</li>
-          <li>Auditoría append-only con anclaje externo de hashes · evidencias con cifrado BYOK-ready</li>
-          <li>Accesibilidad WCAG 2.2 AA verificada automáticamente (Playwright + axe)</li>
+          <li>Desplegado en Azure (App Service + Static Web Apps) con CI/CD OIDC</li>
+          <li>Exportación .docx / .xlsx / .pdf · medición de coste de IA por uso</li>
+          <li>En uso por 1 docente (inventario ACNB, octubre 2026)</li>
         </ul>
-        <div class="tags"><span class="tag">NestJS 11</span><span class="tag">Next.js 15</span><span class="tag">Drizzle</span><span class="tag">ISO 42001</span></div>
-        <div class="actions"></div>
-        <div class="priv">Resuelve el conflicto inmutabilidad del audit log ↔ derecho de supresión (RGPD + Ley 21.719)</div>
+        <div class="tags"><span class="tag">NestJS</span><span class="tag">React</span><span class="tag">Claude · visión</span><span class="tag">Azure</span></div>
+        <div class="actions">
+          <a class="open" href="https://green-water-04990f110.7.azurestaticapps.net" target="_blank" rel="noopener">Abrir app ↗</a>
+        </div>
+        <div class="priv">PRIVACY.md y SECURITY.md formales · Ley 21.719 · credenciales bcrypt</div>
+      </article>
+
+      <article class="card" data-cat="live prop">
+        <div class="top"><h3>VEREDA · PlusvalIA</h3><span class="status live">En vivo · acceso restringido</span></div>
+        <p class="pitch">Evaluación preliminar de terrenos para inversión en Chile: scoring determinista de potencial y riesgo, plusvalía estimada con veredicto GO / CONDICIONAL / NO-GO e informes de referencia generados con IA citando fuentes reales (IEUT-UC, PRC).</p>
+        <ul>
+          <li>MVP v0.1.0 desplegado en Vercel + Neon Postgres · allowlist deny-by-default</li>
+          <li>Producción verificable a commit exacto (endpoint /api/version)</li>
+          <li>Validada por un agente inmobiliario en ejercicio</li>
+        </ul>
+        <div class="tags"><span class="tag">Next.js 16</span><span class="tag">Prisma</span><span class="tag">Claude</span><span class="tag">Leaflet · GIS</span></div>
+        <div class="actions">
+          <a class="open" href="https://plusvalia-cl.vercel.app" target="_blank" rel="noopener">Abrir app ↗</a>
+        </div>
+        <div class="priv">PRIVACY.md documenta cada transferencia de datos · login Google con lista autorizada — acceso demo bajo petición</div>
       </article>
 
       <article class="card" data-cat="gov intern">
@@ -419,33 +437,6 @@
         <div class="tags"><span class="tag">NestJS</span><span class="tag">React</span><span class="tag">Prisma · Postgres</span><span class="tag">Entra ID</span><span class="tag">ENS</span></div>
         <div class="actions"></div>
         <div class="priv">Acceso interno corporativo · demo bajo petición</div>
-      </article>
-
-      <article class="card" data-cat="live prop">
-        <div class="top"><h3>PlusvalIA</h3><span class="status live">En vivo · acceso restringido</span></div>
-        <p class="pitch">Evaluación preliminar de terrenos para inversión en Chile: scoring determinista de potencial y riesgo, plusvalía estimada con veredicto GO / CONDICIONAL / NO-GO e informes de referencia generados con IA citando fuentes reales (IEUT-UC, PRC).</p>
-        <ul>
-          <li>MVP v0.1.0 desplegado en Vercel + Neon Postgres · allowlist deny-by-default</li>
-          <li>Producción verificable a commit exacto (endpoint /api/version)</li>
-        </ul>
-        <div class="tags"><span class="tag">Next.js 16</span><span class="tag">Prisma</span><span class="tag">Claude</span><span class="tag">Leaflet · GIS</span></div>
-        <div class="actions">
-          <a class="open" href="https://plusvalia-cl.vercel.app" target="_blank" rel="noopener">Abrir app ↗</a>
-        </div>
-        <div class="priv">PRIVACY.md documenta cada transferencia de datos · login Google con lista autorizada — acceso demo bajo petición</div>
-      </article>
-
-      <article class="card" data-cat="prop gov">
-        <div class="top"><h3>ONE STOP SHOPPING · EL NEGRO IA</h3><span class="status build">Pre-lanzamiento</span></div>
-        <p class="pitch">Plataforma de inteligencia inmobiliaria retail para Chile: convierte un terreno o un mandato de inversión en un proyecto analizado y financiable — banco de terrenos, demanda por GSE con Censo 2024, matching y underwriting en UF.</p>
-        <ul>
-          <li>~2.000 pruebas automatizadas en verde contra base de datos real</li>
-          <li>GIS real: 21.022 manzanas censales del Biobío, isócronas, TAM/SAM/SOM p10/p50/p90</li>
-          <li>Regla de oro: la IA nunca calcula ni inventa cifras — solo explica cálculos deterministas</li>
-        </ul>
-        <div class="tags"><span class="tag">NestJS · Prisma</span><span class="tag">PostGIS</span><span class="tag">FastAPI · Python</span><span class="tag">Terraform</span></div>
-        <div class="actions"></div>
-        <div class="priv">Programa de privacidad diseñado para la Ley 21.719 · RUT+patrimonio tratados como alta sensibilidad</div>
       </article>
 
       <article class="card" data-cat="live plat edu">
@@ -475,6 +466,19 @@
           <a href="https://casting.musicarte.academy" target="_blank" rel="noopener">Abrir casting ↗</a>
         </div>
         <div class="priv">Datos de menores: Azure Blob privado, política de retención y textos legales en revisión jurídica antes de abrir la v1</div>
+      </article>
+
+      <article class="card" data-cat="prop gov">
+        <div class="top"><h3>ONE STOP SHOPPING · EL NEGRO IA</h3><span class="status build">Pre-lanzamiento</span></div>
+        <p class="pitch">Plataforma de inteligencia inmobiliaria retail para Chile: convierte un terreno o un mandato de inversión en un proyecto analizado y financiable — banco de terrenos, demanda por GSE con Censo 2024, matching y underwriting en UF.</p>
+        <ul>
+          <li>~2.000 pruebas automatizadas en verde contra base de datos real</li>
+          <li>GIS real: 21.022 manzanas censales del Biobío, isócronas, TAM/SAM/SOM p10/p50/p90</li>
+          <li>Regla de oro: la IA nunca calcula ni inventa cifras — solo explica cálculos deterministas</li>
+        </ul>
+        <div class="tags"><span class="tag">NestJS · Prisma</span><span class="tag">PostGIS</span><span class="tag">FastAPI · Python</span><span class="tag">Terraform</span></div>
+        <div class="actions"></div>
+        <div class="priv">Programa de privacidad diseñado para la Ley 21.719 · RUT+patrimonio tratados como alta sensibilidad</div>
       </article>
 
       <article class="card" data-cat="live plat">
