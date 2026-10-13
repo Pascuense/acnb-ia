@@ -298,17 +298,15 @@
     h2, h3, .sec-head, .sec-sub { break-after: avoid; }
     section > .wrap > .sec-head { break-inside: avoid; }
     .tl p { max-width: 105ch; }
-    #planes .grid { grid-template-columns: repeat(2, 1fr); }
-    body { zoom: 1.08; }
+    #planes .grid { grid-template-columns: repeat(3, 1fr); }
+    body { zoom: 0.96; }
     /* La lista de instituciones no debe partirse entre páginas */
     #docencia { break-inside: avoid; }
     #docencia .logos { break-inside: avoid; gap: 2px; margin-top: 3px; }
     #docencia .chip { font-size: 7.4px; padding: 1.5px 6px; }
     #docencia .sec-sub { font-size: 8.6px; }
     /* La contratación pública abre página y no se parte */
-    #publica { break-before: page; break-inside: avoid; }
-
-
+    #publica { break-before: page; break-inside: avoid; }
     #desarrollos .grid { grid-template-columns: repeat(2, 1fr); }
   }
 </style>
@@ -522,7 +520,15 @@
           <a class="open" href="programa-ejecutivo.html" target="_blank" rel="noopener">Abrir presentación ↗</a>
         </div>
       </article>
-      </div>
+      <article class="card">
+        <div class="top"><h3>Formación en IA para empresas</h3><span class="status live">Abrir aquí</span></div>
+        <p class="pitch">La oferta formativa para empresas en Chile: metodología en 4 fases con 20% teoría / 80% práctica sobre casos reales del cliente, con evidencias de horas medidas antes y después.</p>
+        <div class="tags"><span class="tag">20/80</span><span class="tag">In-company</span><span class="tag">Ley 21.719</span></div>
+        <div class="actions">
+          <a class="open" href="formacion-chile.html" target="_blank" rel="noopener">Abrir presentación ↗</a>
+        </div>
+      </article>
+    </div>
   </div>
 </section>
 
