@@ -299,7 +299,7 @@
     section > .wrap > .sec-head { break-inside: avoid; }
     .tl p { max-width: 105ch; }
     #planes .grid { grid-template-columns: repeat(2, 1fr); }
-    body { zoom: 1.18; }
+    body { zoom: 1.04; }
 
 
     #desarrollos .grid { grid-template-columns: repeat(2, 1fr); }
@@ -330,7 +330,7 @@
     </div>
 
     <div class="metrics">
-      <div class="metric"><div class="num">16</div><div class="lbl">desarrollos y plataformas propias</div></div>
+      <div class="metric"><div class="num">17</div><div class="lbl">desarrollos y plataformas propias</div></div>
       <div class="metric"><div class="num">8</div><div class="lbl">aplicaciones en producción con URL viva, hoy</div></div>
       <div class="metric"><div class="num">18</div><div class="lbl">organizaciones formadas con ACNB IA</div></div>
       <div class="metric"><div class="num">2</div><div class="lbl">países: España y Chile</div></div>
@@ -353,8 +353,7 @@
     </div>
 
     <div class="grid">
-
-      <article class="card" data-cat="gov">
+<article class="card" data-cat="gov">
         <div class="top"><h3>CLAVE Governance Platform</h3><span class="status build">En construcción</span></div>
         <p class="pitch">SaaS multitenant de gobernanza de IA: inventario, evaluación, aprobación, operación y retirada de sistemas de IA con trazabilidad completa de riesgos, controles y evidencias. Alineado a ISO/IEC 42001, EU AI Act y RGPD.</p>
         <ul>
@@ -367,7 +366,7 @@
         <div class="priv">Resuelve el conflicto inmutabilidad del audit log ↔ derecho de supresión (RGPD + Ley 21.719)</div>
       </article>
 
-      <article class="card" data-cat="live edu">
+<article class="card" data-cat="live edu">
         <div class="top"><h3>ZAM Docente — Escolar Chile</h3><span class="status live">En vivo</span></div>
         <p class="pitch">Agente docente para profesores de 1° básico a 4° medio basado en los Objetivos de Aprendizaje oficiales del MINEDUC. Garantía anti-invención de currículum: si una cita no traza a la fuente oficial, el servidor la rechaza (HTTP 422).</p>
         <ul>
@@ -382,7 +381,7 @@
         <div class="priv">PRIVACY.md propio · datos de docentes bajo Ley 21.719</div>
       </article>
 
-      <article class="card" data-cat="live edu">
+<article class="card" data-cat="live edu">
         <div class="top"><h3>Plataforma LOMLOE — España</h3><span class="status live">En vivo</span></div>
         <p class="pitch">SaaS para docentes de España: Situaciones de Aprendizaje, fichas de aula y corrección asistida alineadas al currículo oficial LOMLOE. Cada criterio, competencia y saber citado se verifica en servidor contra la semilla oficial.</p>
         <ul>
@@ -397,7 +396,7 @@
         <div class="priv">RGPD/LOPDGDD · el servidor es la única fuente de verdad del currículo</div>
       </article>
 
-      <article class="card" data-cat="live edu">
+<article class="card" data-cat="live edu">
         <div class="top"><h3>Agente Docente INACAP</h3><span class="status live">En vivo</span></div>
         <p class="pitch">Automatiza el trabajo docente desde el descriptor oficial de la asignatura: planificaciones, evaluaciones que suman exactamente 100 puntos, y corrección asistida por visión (escala chilena 1,0–7,0). La IA nunca inventa contenido del descriptor.</p>
         <ul>
@@ -412,7 +411,35 @@
         <div class="priv">PRIVACY.md y SECURITY.md formales · Ley 21.719 · credenciales bcrypt</div>
       </article>
 
-      <article class="card" data-cat="live prop">
+<article class="card" data-cat="live plat">
+        <div class="top"><h3>LINCEJOBS</h3><span class="status live">En vivo · público</span></div>
+        <p class="pitch">IA aplicada al trabajo real por profesión: marketing, legal, finanzas, recursos humanos, desarrollo y logística. Cada perfil entra por su oficio y trabaja sobre sus propias tareas.</p>
+        <ul>
+          <li>Dominio propio y landing pública · más de 20 usuarios registrados</li>
+          <li>Migrada de plataforma externa a infraestructura propia: Azure App Service + Supabase</li>
+        </ul>
+        <div class="tags"><span class="tag">Express · tRPC</span><span class="tag">Drizzle</span><span class="tag">Azure</span><span class="tag">Supabase</span></div>
+        <div class="actions">
+          <a class="open" href="https://www.lincejobs.com/" target="_blank" rel="noopener">Abrir app ↗</a>
+        </div>
+        <div class="priv">Autenticación propia con JWT · secretos fuera del repositorio</div>
+      </article>
+
+<article class="card" data-cat="live edu plat">
+        <div class="top"><h3>LINCE IA</h3><span class="status live">En vivo · público</span></div>
+        <p class="pitch">Plataforma EdTech gamificada para aprender IA jugando: cursos, agentes conversacionales, Prompt Studio, rachas y puntos de experiencia. Formación continua para quien empieza de cero.</p>
+        <ul>
+          <li>Desplegada en Azure App Service con CI/CD y app Android firmada para Play Store</li>
+          <li>Doble sistema de identidad separado: administración y jugadores</li>
+        </ul>
+        <div class="tags"><span class="tag">React 19</span><span class="tag">tRPC</span><span class="tag">Azure OpenAI</span><span class="tag">Capacitor</span></div>
+        <div class="actions">
+          <a class="open" href="https://lince-app.azurewebsites.net/" target="_blank" rel="noopener">Abrir app ↗</a>
+        </div>
+        <div class="priv">Registro de aceptación de términos como evidencia · sesión en cookie HttpOnly</div>
+      </article>
+
+<article class="card" data-cat="live prop">
         <div class="top"><h3>VEREDA · PlusvalIA</h3><span class="status live">En vivo · acceso restringido</span></div>
         <p class="pitch">Evaluación preliminar de terrenos para inversión en Chile: scoring determinista de potencial y riesgo, plusvalía estimada con veredicto GO / CONDICIONAL / NO-GO e informes de referencia generados con IA citando fuentes reales (IEUT-UC, PRC).</p>
         <ul>
@@ -427,7 +454,7 @@
         <div class="priv">PRIVACY.md documenta cada transferencia de datos · login Google con lista autorizada — acceso demo bajo petición</div>
       </article>
 
-      <article class="card" data-cat="gov intern">
+<article class="card" data-cat="gov intern">
         <div class="top"><h3>ACNB Control IA</h3><span class="status intern">Producción interna</span></div>
         <p class="pitch">Sistema operativo empresarial de ACNB IA: CRM, gestor documental, formación/FUNDAE, control financiero, cumplimiento ENS y asistente IA. El backoffice real con el que opera la empresa.</p>
         <ul>
@@ -439,7 +466,7 @@
         <div class="priv">Acceso interno corporativo · demo bajo petición</div>
       </article>
 
-      <article class="card" data-cat="live plat edu">
+<article class="card" data-cat="live plat edu">
         <div class="top"><h3>ACNB IA Academy — Campus virtual</h3><span class="status live">En vivo</span></div>
         <p class="pitch">Plataforma de formación en IA de ACNB IA sobre Moodle: campus virtual con el que se imparten los cursos bonificables FUNDAE a empresas e instituciones en España.</p>
         <ul>
@@ -453,7 +480,7 @@
         <div class="priv">Datos de alumnado tratados conforme a RGPD</div>
       </article>
 
-      <article class="card" data-cat="live plat">
+<article class="card" data-cat="live plat">
         <div class="top"><h3>MusicArte Academy + Casting digital</h3><span class="status live">En vivo</span></div>
         <p class="pitch">Ecosistema digital de la Fundación de Artes Escénicas MusicArte (Chile): campus Moodle «Potenciado por ACNB IA» y plataforma pública de casting con subida de vídeo para «Voces de Natales 2026», con autorización de tutores para menores.</p>
         <ul>
@@ -468,7 +495,78 @@
         <div class="priv">Datos de menores: Azure Blob privado, política de retención y textos legales en revisión jurídica antes de abrir la v1</div>
       </article>
 
-      <article class="card" data-cat="prop gov">
+<article class="card" data-cat="live gov plat">
+        <div class="top"><h3>MusicArte · Impacto Social</h3><span class="status intern">En vivo · acceso restringido</span></div>
+        <p class="pitch">Plataforma de medición del impacto social de los programas de la fundación: indicadores, metas, evidencias y reportabilidad bajo estándares GRI, SROI y ODS, para acreditar resultados ante empresas y fondos.</p>
+        <ul>
+          <li>Núcleo GRI 413 (comunidades locales) con GRI 203, 404, 405 y 411 como complementos</li>
+          <li>SROI con ajustes de peso muerto, atribución y desplazamiento</li>
+        </ul>
+        <div class="tags"><span class="tag">GRI</span><span class="tag">SROI</span><span class="tag">ODS</span></div>
+        <div class="actions">
+          <a class="open" href="https://impacto.musicarte.academy/" target="_blank" rel="noopener">Abrir panel ↗</a>
+        </div>
+        <div class="priv">Panel protegido con credenciales · acceso de demostración bajo petición</div>
+      </article>
+
+<article class="card" data-cat="live gov plat">
+        <div class="top"><h3>AquaChile · Dashboard de Impacto</h3><span class="status intern">En vivo · cliente corporativo</span></div>
+        <p class="pitch">Panel a medida para que AquaChile siga la medición del programa educativo que patrocina, alineado con su Reporte Integrado y con los objetivos de su equipo de comunidades: continuidad operacional, desarrollo local y reputación.</p>
+        <ul>
+          <li>Credenciales propias del cliente, separadas de las del equipo</li>
+          <li>Declara explícitamente qué estándares no aplican, en lugar de prometer cobertura total</li>
+          <li>Sin recursos externos: política de contenido restringida al propio servidor</li>
+        </ul>
+        <div class="tags"><span class="tag">GRI</span><span class="tag">Reporte Integrado</span><span class="tag">CSP propia</span></div>
+        <div class="actions">
+          <a class="open" href="https://impacto.musicarte.academy/aquachile/" target="_blank" rel="noopener">Abrir panel ↗</a>
+        </div>
+        <div class="priv">Acceso exclusivo del cliente · demostración guiada bajo petición</div>
+      </article>
+
+<article class="card" data-cat="live plat">
+        <div class="top"><h3>Mundo Futuro · Jugadores</h3><span class="status intern">En vivo · acceso restringido</span></div>
+        <p class="pitch">Sistema de gestión para representación de futbolistas: cartera de jugadores, contactos, contratos y movimientos de mercado en un único control operativo.</p>
+        <ul>
+          <li>Desplegado en Azure Static Web Apps con funciones propias de servidor</li>
+          <li>Acceso con cuenta y contraseña por usuario</li>
+        </ul>
+        <div class="tags"><span class="tag">Azure Static Web Apps</span><span class="tag">Azure Functions</span></div>
+        <div class="actions">
+          <a class="open" href="https://salmon-smoke-0baaa540f.5.azurestaticapps.net/" target="_blank" rel="noopener">Abrir app ↗</a>
+        </div>
+        <div class="priv">Datos contractuales de deportistas · acceso solo para personal autorizado</div>
+      </article>
+
+<article class="card" data-cat="plat">
+        <div class="top"><h3>WAM Center · Gestión Clínica</h3><span class="status build">Demostración</span></div>
+        <p class="pitch">Software de gestión clínica: pacientes, presupuestos, pagos, documentos, fotografías clínicas y control operativo del centro en un solo panel.</p>
+        <ul>
+          <li>Desplegado en la región de Azure en Chile, donde opera el centro</li>
+          <li>Entorno identificado como demostración: aún no trata datos de pacientes reales</li>
+        </ul>
+        <div class="tags"><span class="tag">Azure App Service</span><span class="tag">Chile Central</span></div>
+        <div class="actions">
+          <a class="open" href="https://panelclinica-acnb-fzevf0a4dgf8bpfc.chilecentral-01.azurewebsites.net/" target="_blank" rel="noopener">Abrir demo ↗</a>
+        </div>
+        <div class="priv">Datos de salud: requiere evaluación de impacto y encargo de tratamiento antes de uso real</div>
+      </article>
+
+<article class="card" data-cat="live plat">
+        <div class="top"><h3>Agencia ATENAS · Comisiones</h3><span class="status intern">En vivo · cliente externo</span></div>
+        <p class="pitch">Sistema de comisiones para una agencia comercial: ventas, vouchers, validación de pagos y liquidación de comisiones por agente, con la trazabilidad que exige el cierre mensual.</p>
+        <ul>
+          <li>Desplegado en Vercel con acceso por cuenta, sin zona pública</li>
+          <li>Alta inicial del administrador mediante token de instalación de un solo uso</li>
+        </ul>
+        <div class="tags"><span class="tag">Next.js</span><span class="tag">Vercel</span></div>
+        <div class="actions">
+          <a class="open" href="https://atenas-comisiones.vercel.app/" target="_blank" rel="noopener">Abrir app ↗</a>
+        </div>
+        <div class="priv">Datos económicos de un cliente externo · tratados bajo acuerdo de confidencialidad</div>
+      </article>
+
+<article class="card" data-cat="prop gov">
         <div class="top"><h3>ONE STOP SHOPPING · EL NEGRO IA</h3><span class="status build">Pre-lanzamiento</span></div>
         <p class="pitch">Plataforma de inteligencia inmobiliaria retail para Chile: convierte un terreno o un mandato de inversión en un proyecto analizado y financiable — banco de terrenos, demanda por GSE con Censo 2024, matching y underwriting en UF.</p>
         <ul>
@@ -481,7 +579,7 @@
         <div class="priv">Programa de privacidad diseñado para la Ley 21.719 · RUT+patrimonio tratados como alta sensibilidad</div>
       </article>
 
-      <article class="card" data-cat="live plat">
+<article class="card" data-cat="live plat">
         <div class="top"><h3>Utebo en Fiestas · Santa Ana 2026</h3><span class="status live">En vivo · público</span></div>
         <p class="pitch">PWA pública y accesible para las fiestas de Utebo: 80 actividades con vistas «Ahora», «Hoy», «En familia» y «Esta noche», favoritos exportables a calendario (.ics) y mapa OpenStreetMap. Proyecto demostrativo de ACNB IA para administración local.</p>
         <ul>
@@ -493,8 +591,6 @@
         </div>
         <div class="priv">Sin datos personales · app informativa pública</div>
       </article>
-
-    </div>
     </div>
 </section>
 
